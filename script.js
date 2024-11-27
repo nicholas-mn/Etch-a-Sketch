@@ -1,4 +1,8 @@
 const gridDiv = document.querySelector("#grid");
+const resetGridBtn = document.querySelector(".reset");
+const createNewGridSizeBtn = document.querySelector(".createNew");
+
+let currentGridSize = 0;
 
 function createGrid(amount) {
     
@@ -18,6 +22,12 @@ function createGrid(amount) {
 
     }
 
+    currentGridSize = amount;
+
 }
+
+resetGridBtn.addEventListener("click", () => {
+    createGrid(currentGridSize);
+});
 
 createGrid(16);

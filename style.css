@@ -1,5 +1,6 @@
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -16,4 +17,8 @@ body {
 .gridElement {
     flex: auto;
     background-color: grey;
+}
+
+.buttons {
+    margin-bottom: 5px;
 }
