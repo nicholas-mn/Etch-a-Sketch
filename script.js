@@ -1,6 +1,7 @@
 const gridDiv = document.querySelector("#grid");
 const resetGridBtn = document.querySelector(".reset");
 const createNewGridSizeBtn = document.querySelector(".createNew");
+const currentGridSizePara = document.querySelector(".currentGridSize");
 
 let currentGridSize = 0;
 
@@ -23,6 +24,7 @@ function createGrid(amount) {
     }
 
     currentGridSize = amount;
+    currentGridSizePara.textContent = currentGridSize + "x" + currentGridSize;
 
 }
 
