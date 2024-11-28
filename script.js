@@ -39,8 +39,8 @@ createNewGridSizeBtn.addEventListener("click", () => {
     if (isNaN(newGridSize) === true) {
         alert("Needs to be a number, try again.");
         return;
-    } else if (newGridSize > 100 || newGridSize < 1) {
-        alert("Needs to a number between 1 and 100, try again");
+    } else if (newGridSize > 100 || newGridSize < 1 || Number.isSafeInteger(+newGridSize) == false) {
+        alert("Needs to be a whole number between 1 and 100, try again");
         return;
     } else if (newGridSize === undefined || newGridSize === null || newGridSize === "") {
         console.log("Choose new grid size: no input");
