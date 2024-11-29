@@ -8,8 +8,9 @@ let currentGridSize = 0;
 function createGrid(amount) {
     
     gridDiv.textContent = "";
+    gridTotal = amount * amount;
 
-    for (i = 0; i !== amount * amount; ++i) {
+    for (i = 0; i !== gridTotal; ++i) {
         
         const gridElement = document.createElement("div");
         gridElement.classList.add("gridElement");
